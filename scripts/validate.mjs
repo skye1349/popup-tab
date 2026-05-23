@@ -9,7 +9,8 @@ const requiredFiles = [
   "icons/icon-16.png",
   "icons/icon-32.png",
   "icons/icon-48.png",
-  "icons/icon-128.png"
+  "icons/icon-128.png",
+  "store-assets/small-promo-440x280.png"
 ];
 
 for (const file of requiredFiles) {

@@ -29,3 +29,27 @@ Productivity
 ## Privacy Disclosure Notes
 
 Popup Tab does not collect or transmit user data. The `tabs` permission is used to move the active tab between window types. The `storage` permission is used only for session-scoped restore state.
+
+## Permission Justifications
+
+### tabs
+
+Required to identify the active tab and move it between a normal Chrome window and a popup window.
+
+### storage
+
+Required to store session-only restore state, including the original window ID and tab index while a tab is popped out.
+
+## Remote Code
+
+No remote code is used.
+
+## Data Collection
+
+No user data is collected.
+
+## Required Listing Images
+
+- Extension icon: `icons/icon-128.png`
+- Small promotional image: `store-assets/small-promo-440x280.png`
+- Screenshot: `store-assets/screenshot-options-1280x800.png`

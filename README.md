@@ -26,10 +26,13 @@ You can also click the extension icon and open the options page, which links dir
 
 ```sh
 npm run generate:icons
+npm run generate:store-assets
 npm run package
 ```
 
 The uploadable ZIP will be created at `dist/popup-tab.zip`.
+
+Store listing assets live in `store-assets/`.
 
 ## Public GitHub Repo
 
