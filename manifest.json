@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Popup Tab",
+  "description": "Toggle the active Chrome tab between a normal tab and a popup window with a keyboard shortcut.",
+  "version": "0.3.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_title": "Popup Tab"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "pop-current-tab": {
+      "suggested_key": {
+        "default": "Alt+P",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Toggle the current tab between tab and popup"
+    }
+  }
+}

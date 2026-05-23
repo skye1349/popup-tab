@@ -1,0 +1,12 @@
+{
+  "name": "popup-tab",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Chrome extension that toggles the active tab between a regular tab and a popup window.",
+  "scripts": {
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "validate": "node --check background.js && node scripts/validate.mjs",
+    "package": "npm run validate && mkdir -p dist && zip -r dist/popup-tab.zip manifest.json background.js options.html options.css options.js icons"
+  },
+  "license": "MIT"
+}
